@@ -56,6 +56,66 @@ div ul{
     color: #8987A1;
     margin-bottom: 0;
 }
+/* our-plants styles */
+.our-plants-tittle{
+    height: 138px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+.our-plants-tittle span{
+    color: #E95A08
+}
+.our-plants-tittle h2{
+    font-size: 50px;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.our-plants-tittle p{
+    color: #8987A1;
+    margin-top: 0;
+    text-align: center;
+}
+.our-plants-card{
+    display :grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+.our-plants-card h5{
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+.our-plants-card p{
+    color: #252432;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+}
+.our-plants-card img{
+    width: 100%;
+    height: 300px;
+}
+.our-plants-card button{
+    width: 100%;
+    height: 50px;
+    background-color: #E95A08;
+    color: #FFFFFF;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+.our-plants-card button:hover{
+    background-color: #252432;
+}
+
 @media screen and (max-width:600px) {
     div ul{
         display: none;
@@ -80,6 +140,32 @@ div ul{
             margin-left: 100px;
          }
          .banner-text h2{
+            font-size: 30px;
             margin-bottom: 0;
          }
+         .our-plants-card{
+            grid-template-columns: repeat(2, 1fr);
+            width: 100%;
+            height: 340px;
+            margin-left: 80px;
+            gap: 20px;
+            margin-top: 50px;
+         }
+            .our-plants-card img{
+                width: 100%;
+                height: 200px;
+            }
+            .our-plants-tittle{
+                width: 393px;
+                height: 117px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 0 0 80px;
+               
+            }
+            .our-plants-tittle h2{
+                font-size: 30px;
+                margin-bottom: 0;
+            }
 }
