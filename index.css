@@ -25,20 +25,61 @@ div ul{
 .nav-logo{
     margin-top: 10px;
 }
-.middium-bold{
+.meddium-bold{
     font-weight: bold;
     color: #252432;
 }
 .regular-bold{
     color: #8987A1;
 }
-
+/* banner styles */
+.banner{
+    display: flex;
+    height: 460px;
+    margin: 120px auto;
+}
+.banner-text{
+    margin-top: 162px;
+}
+.banner-img{
+    margin-top: 162px;
+}
+.banner-text h2{
+    font-size: 65px;
+    font-weight: bold;
+    color: #000000;
+}
+.banner-text h2 > span{
+    color: #E95A08;
+}
+.banner-text p{
+    color: #8987A1;
+    margin-bottom: 0;
+}
 @media screen and (max-width:600px) {
     div ul{
         display: none;
          }
          .navbar{
-            margin: 0 20px;
+            margin: 10px 20px;
+            gap: 185px;
             
+         }
+         .banner{
+            flex-direction: column-reverse;
+            margin-top: 350px;
+            
+         }
+         .banner-text{
+            margin-left: 10px;
+            margin-top: 0;
+         }
+         #cart{
+            display: flex;
+            gap: 5px;
+            margin-left: 100px;
+         }
+         .banner-text h2{
+            margin-bottom: 0;
          }
 }
